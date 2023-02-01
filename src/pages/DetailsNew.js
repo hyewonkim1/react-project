@@ -43,13 +43,13 @@ export default function DetailsNew(props) {
     <h5 className="d_bar_title">회원 혜택 안내</h5>
     <div className="d_bar_box">
       <div className="d_bar01">
-        <img src={process.env.PUBLIC_URL+'/images/bar01_01.jpg'} alt="" />
+      <img src={process.env.PUBLIC_URL+'/images/bar01_01_.jpg'} alt="" />
       </div>
       <div className="d_bar02"> 
-        <img src={process.env.PUBLIC_URL+'/images/bar01_02.jpg'} alt="" />
+      <img src={process.env.PUBLIC_URL+'/images/bar01_02_.jpg'} alt="" />
       </div>
       <div className="d_bar03">
-        <img src={process.env.PUBLIC_URL+'/images/bar01_03.jpg'} alt="" />
+      <img src={process.env.PUBLIC_URL+'/images/bar01_03_.jpg'} alt="" />
       </div>
       <div className="d_bar04">
       <img src={process.env.PUBLIC_URL+'/images/bar01_04_.jpg'} alt="" />
