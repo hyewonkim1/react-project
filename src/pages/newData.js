@@ -173,7 +173,7 @@ const newData = [
     image: process.env.PUBLIC_URL+'/images/new_08.png',
     color:'',
     review: '리뷰 186',
-    title: '브리즈 하프넥 롱슬리브 티쳐츠 쏘일브라운',
+    title: '브리즈 하프넥 롱슬리브 티쳐츠 브라운',
     price: 128000,
     saleprice: 65000,
     textbox:'',

@@ -47,7 +47,6 @@ function App() {
         <Container>
           <Navbar.Brand style={{cursor:'pointer'}} onClick={()=>{navigate('/')}}>Skullpig</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>{navigate('/')}}>Home</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/about')}}>About</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/cart')}}>Cart</Nav.Link>
           </Nav>
