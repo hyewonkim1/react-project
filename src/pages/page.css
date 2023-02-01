@@ -160,6 +160,10 @@ a{text-decoration: none; color: black;}
   margin: 0 auto;
   margin-bottom: 100px;
 }
+.detail_box {
+  width: 1400px;
+  margin: 0 auto;
+}
 
 
 
