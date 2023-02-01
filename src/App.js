@@ -86,7 +86,7 @@ function App() {
               <img src={process.env.PUBLIC_URL+'/images/banner_01.jpg'} alt="" />
               <img src={process.env.PUBLIC_URL+'/images/banner_02.jpg'} alt="" />
             </div>
-            <h4 className='all_title'>Best 상품</h4>
+            <h4 className='best_title'>Best 상품</h4>
             <Row> {
               bests.map((best,i)=>{
                 return (

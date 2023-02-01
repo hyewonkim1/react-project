@@ -1,7 +1,7 @@
 
 import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
-import {deleteItem, subCount, addCount} from './store'
+import {deleteItem, subCount, addCount} from './store';
 
 export default function Cart() {
 

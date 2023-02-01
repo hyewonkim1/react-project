@@ -2,7 +2,6 @@
 a{text-decoration: none; color: black;}
 
 
-
 .banner_box {
   margin: 0 auto;
   margin-top: 10px;
@@ -10,15 +9,22 @@ a{text-decoration: none; color: black;}
 .banner_box img {
   width: 50%;
 }
-.all_title, .new_title {
+.best_title {
   margin: 20px 0;
   font-weight: bold;
 }
-.best_box,.new_box  {
+.new_title {
+  margin: 20px 0;
+  font-weight: bold;
+}
+.best_box  {
   width: 304px;
   height: 680px;
 }
-
+.new_box {
+  width: 304px;
+  height: 680px;
+}
 .top_box {
   font-size: 11px;
   display: flex;
@@ -66,9 +72,8 @@ a{text-decoration: none; color: black;}
 .btn_box {
   height: 30px;
 }
-.btn_box button {
-  width: 50%;
-}
+
+
 
 .btn {
   display: inline-block;
@@ -86,27 +91,23 @@ a{text-decoration: none; color: black;}
 
 
 
-
-
-
-
-
-
-
 .cart_title {
   margin: 20px auto;
 }
 
 
-
-
-
-
-
-.d_best_box>h4 {
-  width: 450px;
+.d_top_box {
+  width: 304px;
+  display: flex;
   margin: 0 auto;
-  margin-top: 10px;
+}
+.d_top_box>p:first-child {
+  width: 70%;
+
+}
+.d_top_box>p:last-child {
+  width: 30%;
+  text-align: right;
 }
 .d_price_box {
   width: 304px;
@@ -131,20 +132,6 @@ a{text-decoration: none; color: black;}
   color: #999;
   text-align: left;
 }
-.d_top_box {
-  width: 304px;
-  display: flex;
-  margin: 0 auto;
-}
-.d_top_box>p:first-child {
-  width: 70%;
-
-}
-.d_top_box>p:last-child {
-  width: 30%;
-  text-align: right;
-}
-
 .d_btn {
   width: 30px;
   margin-left: 5px;
@@ -173,10 +160,6 @@ a{text-decoration: none; color: black;}
   margin: 0 auto;
   margin-bottom: 100px;
 }
-
-
-
-
 
 
 
