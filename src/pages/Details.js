@@ -1,13 +1,13 @@
-import { useState } from "react"
-import { useDispatch } from "react-redux"
-import { useParams } from "react-router-dom"
-import { addItem } from "./store"
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
+import { addItem } from "./store";
 
 export default function Details(props) {
-  const {bests} = props
-  const{id} = useParams()
-  const[count,setCount] = useState(0)
-  const dispatch = useDispatch()
+  const {bests}=props
+  const{id}=useParams()
+  const[count,setCount]=useState(0)
+  const dispatch=useDispatch()
 
     return (
       <div className="d_best_box">
@@ -41,18 +41,18 @@ export default function Details(props) {
             </select>
             }</p>
           <p>사이즈 : {
-            <select name="" id="">
-              <option value="" style={{ textAlign:'center'}} >--- 필수선택 ---</option>
-              <option value="">{bests[id].size.size01}</option>
-              <option value="">{bests[id].size.size02}</option>
-              <option value="">{bests[id].size.size03}</option>
-              <option value="">{bests[id].size.size04}</option>
-              <option value="">{bests[id].size.size05}</option>
-              <option value="">{bests[id].size.size06}</option>
+            <select>
+              <option style={{ textAlign:'center'}} >--- 필수선택 ---</option>
+              <option>{bests[id].size.size01}</option>
+              <option>{bests[id].size.size02}</option>
+              <option>{bests[id].size.size03}</option>
+              <option>{bests[id].size.size04}</option>
+              <option>{bests[id].size.size05}</option>
+              <option>{bests[id].size.size06}</option>
             </select>
             }</p>
           <span>수량 : {count}개</span>
-          <button  className="d_btn" onClick={()=>setCount(count+1)}>+</button>
+          <button className="d_btn" onClick={()=>setCount(count+1)}>+</button>
           <button className="d_btn" onClick={()=>setCount(count-1)}>-</button>
           <p style={{fontSize:24, fontWeight:'bold'}}>총 금액 : {bests[id].saleprice*count}원({count}개)</p>
           <button className="btn" onClick={()=>{
@@ -89,13 +89,6 @@ export default function Details(props) {
           <div>
             <img src={process.env.PUBLIC_URL+'/images/cs.jpg'} alt="" />
           </div>
-
-
-
-
-
-
-
         </div>
           
 

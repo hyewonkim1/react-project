@@ -1,13 +1,13 @@
 import './App.css';
-import {Routes, Route, Link, useNavigate} from 'react-router-dom'
+import {Routes, Route, Link, useNavigate} from 'react-router-dom';
 import data from './pages/bestData';
 import {Container, Nav, Navbar, Row, Col, Carousel} from 'react-bootstrap';
 import { useState } from 'react';
 import About from './pages/About';
-import Details from './pages/Details';
-import './pages/page.css'
+import DetailsNew from './pages/DetailsNew';
+import './pages/page.css';
 import newData from './pages/newData';
-import Details_new from './pages/Details_new';
+import Details from './pages/Details';
 import Cart from './pages/Cart';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
@@ -88,7 +88,7 @@ function App() {
             </div>
             <h4 className='all_title'>Best 상품</h4>
             <Row> {
-              bests.map((best,i) => {
+              bests.map((best,i)=>{
                 return (
                   <Col className='best_box'>
                   <Link to={`/detail/${i}`}>
@@ -124,7 +124,7 @@ function App() {
               newDatas.map((newData,i) => {
                 return (
                   <Col className='new_box'>
-                  <Link to={`/details_new/${i}`}>
+                  <Link to={`/DetailsNew/${i}`}>
                   <img src={newData.image} alt="" style={{width:304}} />
                   <div className='top_box'>
                     <p>{newData.color}</p>
@@ -161,7 +161,7 @@ function App() {
         </Route>
 
         <Route path='detail/:id' element={<Details bests={bests} />} />
-        <Route path='details_new/:id' element={<Details_new newData={newData} />} /> 
+        <Route path='DetailsNew/:id' element={<DetailsNew newData={newData} />} /> 
        
         <Route path='cart' element={<Cart />}/>
         

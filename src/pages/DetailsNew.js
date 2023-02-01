@@ -1,14 +1,13 @@
-import { useState } from "react"
-import { Button } from "react-bootstrap"
-import { useDispatch } from "react-redux"
-import { useParams } from "react-router-dom"
-import { addItem } from "./store"
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
+import { addItem } from "./store";
 
-export default function Details(props) {
-  const {newData} = props
+export default function DetailsNew(props) {
+  const {newData}=props
   const{id} = useParams()
-  const [count,setCount] = useState(0)
-  const dispatch = useDispatch()
+  const [count,setCount]=useState(0)
+  const dispatch=useDispatch()
 
   return (
     
@@ -25,12 +24,12 @@ export default function Details(props) {
       <p>{newData[id].price}원</p>
     </div>
     <p>사이즈 : {
-      <select name="" id="">
-        <option value="">--- 필수선택 ---</option>
-        <option value="">{newData[id].size.size01}</option>
-        <option value="">{newData[id].size.size02}</option>
-        <option value="">{newData[id].size.size03}</option>
-        <option value="">{newData[id].size.size04}</option>
+      <select>
+        <option>--- 필수선택 ---</option>
+        <option>{newData[id].size.size01}</option>
+        <option>{newData[id].size.size02}</option>
+        <option>{newData[id].size.size03}</option>
+        <option>{newData[id].size.size04}</option>
       </select>
       }</p>
     <span>수량 : {count}개</span>
@@ -71,5 +70,4 @@ export default function Details(props) {
     </div>
     </div>
   )
-    
     }
