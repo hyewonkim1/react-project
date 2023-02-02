@@ -16,6 +16,7 @@ import { addItem } from './pages/store';
 
 
 
+
 function App() {
 
   const navigate = useNavigate()
@@ -58,7 +59,7 @@ function App() {
         <Route path='/' element={
           <Container>
             <div>
-              <Carousel fade style={{marginTop:10}}>
+              <Carousel fade style={{marginTop:20}}>
                 <Carousel.Item>
                   <img className="d-block w-100" src={process.env.PUBLIC_URL+'/images/visual_main_01.jpg'} style={{width:1296}} alt="First slide"/>
                   <Carousel.Caption>
@@ -150,8 +151,7 @@ function App() {
               })
               }
             </Row>
-
-  <footer class="footer_box">
+<footer class="footer_box">
   <div class="footer">
     <div class="footer_logo">
       <a href="#!">SKULLPIG</a>
@@ -221,12 +221,14 @@ function App() {
 
 </footer>
 
+  
 
 
 
           </Container>
           
         }></Route>
+ 
         <Route path='about' element={<About />}>
           <Route path='info' element={<div>Information</div>} />
           <Route path='loca' element={<div>Location</div>} />

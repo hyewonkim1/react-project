@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import {deleteItem, subCount, addCount} from './store';
 
+
 export default function Cart() {
 
   const state = useSelector((state)=>{return state})
@@ -22,11 +23,15 @@ export default function Cart() {
           <th>합계</th>
           <th>증감</th>
         </tr>
+
       </thead>
+
       <tbody>
         {
           state.cart.map((item,i)=>{
+            
             return (
+
             <tr key={i}>
               <td>{i+1}</td>
               <td>{state.cart[i].title}</td>
@@ -45,13 +50,17 @@ export default function Cart() {
                 }}>삭제</button>
               </td>
             </tr>
-            )
+
+            ) 
+
           })
         }
       </tbody>
     </Table>
     <hr />
+    <div>전체 합계 : <span></span></div>
     <button className='btn'>주문하기</button>
+  
 
     </div>
   )
