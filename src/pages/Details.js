@@ -14,10 +14,9 @@ export default function Details(props) {
 
       <div className="wrap">
         <div className="d_best_img">
-          <img src={bests[id].image} alt="" />
+          <img src={bests[id].image} alt="img" />
             <div className='d_top_box'>
               <p>{bests[id].colorbox}</p>
-              <p>{bests[id].review}</p>
             </div>
         </div>
 
@@ -69,31 +68,31 @@ export default function Details(props) {
             <p  className="d_bar_title">회원 혜택 안내</p>
             <div className="d_bar_box">
               <div className="d_bar01">
-              <img src={process.env.PUBLIC_URL+'/images/bar01_01_.jpg'} alt="" />
+              <img src={process.env.PUBLIC_URL+'/images/bar01_01_.jpg'} alt="신규 회원 적립금" />
               </div>
               <div className="d_bar02">
-              <img src={process.env.PUBLIC_URL+'/images/bar01_02.jpg'} alt="" />
+              <img src={process.env.PUBLIC_URL+'/images/bar01_02_.jpg'} alt="등급 별 할인" />
               </div>
               <div className="d_bar03">
-              <img src={process.env.PUBLIC_URL+'/images/bar01_03.jpg'} alt="" />
+              <img src={process.env.PUBLIC_URL+'/images/bar01_03_.jpg'} alt="리뷰 적립금" />
               </div>
               <div className="d_bar04">
-                <img src={process.env.PUBLIC_URL+'/images/bar01_04_.jpg'} alt="" />
+                <img src={process.env.PUBLIC_URL+'/images/bar01_04_.jpg'} alt="무료배송" />
               </div>
               </div>
               <div className="d_bar_img_box">
-               <img src={process.env.PUBLIC_URL+'/images/bar_img02.jpg'} alt="" />
+               <img src={process.env.PUBLIC_URL+'/images/bar_img02.jpg'} alt="bar" />
             </div>
 
           <div className="detail_box">
-            <img src={bests[id].detailimg.detailimg01} alt="" />
-            <img src={bests[id].detailimg.detailimg02} alt="" />
-            <img src={bests[id].detailimg.detailimg03} alt="" />
-            <img src={bests[id].detailimg.detailimg04} alt="" />
-            <img src={bests[id].detailimg.detailimg05} alt="" />
-            <img src={bests[id].detailimg.detailimg06} alt="" />
-            <img src={bests[id].detailimg.detailimg07} alt="" />
-            <img src={process.env.PUBLIC_URL+'/images/cs.jpg'} alt="" />
+            <img src={bests[id].detailimg.detailimg01} alt="detail img  " />
+            <img src={bests[id].detailimg.detailimg02} alt="detail img" />
+            <img src={bests[id].detailimg.detailimg03} alt="detail img" />
+            <img src={bests[id].detailimg.detailimg04} alt="detail img" />
+            <img src={bests[id].detailimg.detailimg05} alt="detail img" />
+            <img src={bests[id].detailimg.detailimg06} alt="detail img" />
+            <img src={bests[id].detailimg.detailimg07} alt="detail img" />
+            <img src={process.env.PUBLIC_URL+'/images/cs.jpg'} alt="cs img" />
           </div>
           </div>
           

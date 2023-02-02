@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar className='lnb' style={{width:1296, height:100,backgroundColor:'rgb(48, 51, 51)'}}>
+      <Navbar className='lnb' style={{height:100,backgroundColor:'rgb(48, 51, 51)'}}>
         <Container>
           <Navbar.Brand style={{cursor:'pointer',color:'white', fontSize:28, fontWeight:'bold'}} onClick={()=>{navigate('/')}}>Skullpig</Navbar.Brand>
           <Nav className="me-auto">
@@ -150,6 +150,7 @@ function App() {
               })
               }
             </Row>
+
   <footer class="footer_box">
   <div class="footer">
     <div class="footer_logo">
@@ -159,11 +160,11 @@ function App() {
     <div class="footer_text">
       <div class="footer01_top">
         <p><a href="#!"><Link to='/about'>회사안내</Link></a></p>
-        <p><a>이용약관</a></p>
-        <p><a>개인정보처리방침</a></p>
-        <p><a>쇼핑몰이용안내</a></p>
-        <p><a>고객센터</a></p>
-        <p><a>배송조회</a></p>
+        <p><a href="#!">이용약관</a></p>
+        <p><a href="#!">개인정보처리방침</a></p>
+        <p><a href="#!">쇼핑몰이용안내</a></p>
+        <p><a href="#!">고객센터</a></p>
+        <p><a href="#!">배송조회</a></p>
         </div>
         <div className='footer01_bottom'> 
       <p>교환/반품 주소지 : 서울특별시 광진구 강변역로2 광진우체국 소포실 제이스버디앞</p>

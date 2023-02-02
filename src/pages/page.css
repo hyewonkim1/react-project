@@ -199,26 +199,38 @@ a{text-decoration: none; color: black;}
   width: 1400px;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding-top: 100px;
 }
 .wrap {
   width: 1400px;
-  height: 480px;
+  height: 500px;
   overflow: hidden;
 }
 
 .d_best_img, .d_new_img {
   width: 30%;
-  height: 475px;
+  height: 500px;
   margin: 0 auto;
   float: left;
 }
-.d_best_txt, .d_new_txt {
+.d_best_img img, .d_new_img img {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+.d_best_txt{
   width: 70%;
-  height: 475px;
+  height: 500px;
   float: left;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
+.d_new_txt {
+  width: 70%;
+  height: 500px;
+  float: left;
+  padding-top: 120px;
+}
 .d_top_box {
   width: 304px;
   display: flex;
