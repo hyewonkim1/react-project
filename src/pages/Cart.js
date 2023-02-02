@@ -11,7 +11,7 @@ export default function Cart() {
 
   return(
     <div>
-      <h4 className='cart_title'>{state.user}님의 장바구니</h4>
+      <h3 style={{fontWeight:'bold'}} className='cart_title'>{state.user}님의 장바구니</h3>
       <Table striped bordered hover>
       <thead>
         <tr>
