@@ -28,10 +28,20 @@ a{text-decoration: none; color: black;}
   height: 680px;
 }
 
-.footer_box {
-  width:100%;
-  height: 500px;
+
+
+
+
+
+.footer_section {
+  width: 100%;
   background-color: rgb(48, 51, 51);
+
+}
+
+.footer_box {
+  width:1296px;
+  height: 500px;
   margin-top: 20px;
   margin: 0 auto;
 }
@@ -51,7 +61,7 @@ a{text-decoration: none; color: black;}
   width: 50%;
   height: 300px;
   float: left;
-  font-size: 13px;
+  font-size: 11px;
 }
 .footer_text .footer01_top {
   width: 100%;
@@ -60,6 +70,9 @@ a{text-decoration: none; color: black;}
 }
 .footer_text .footer01_top p {
   width: 80px;
+}
+.footer_text .footer01_top p:first-child {
+  margin-left: 13px;
 }
 .footer_text .footer01_top p:nth-child(3) {
   width: 105px;
@@ -87,14 +100,17 @@ a{text-decoration: none; color: black;}
   width: 50%;
   height: 300px;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 11px;
   display: flex;
   text-align: center;
 }
 .footer02>div {
   width: 233px;
 }
-
+.footername {
+  font-weight: bold;
+  font-size: 13px;
+}
 .sns_box {
   width: 100%;
 

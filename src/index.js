@@ -7,6 +7,8 @@ import {BrowserRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './pages/store';
 import ScrollToTop from './pages/ScrollToTop';
+import Footer from './pages/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,10 +16,10 @@ root.render(
     <Provider store={store}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
-          <App />
+        <App />
+        <Footer/>
       </BrowserRouter>
     </Provider>
-
   </React.StrictMode>
 );
 
