@@ -50,7 +50,7 @@ export default function Cart() {
                 }}>삭제</button>
               </td>
             </tr>
-
+            
             ) 
 
           })
@@ -58,7 +58,7 @@ export default function Cart() {
       </tbody>
     </Table>
     <hr />
-    <div>전체 합계 : <span></span></div>
+    <div></div>
     <button className='btn'>주문하기</button>
   
 
