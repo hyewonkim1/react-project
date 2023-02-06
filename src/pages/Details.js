@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addItem } from "./store";
-import {Link} from 'react-router-dom';
+
 
 export default function Details(props) {
   const {bests}=props
@@ -58,7 +58,11 @@ export default function Details(props) {
             }</p>
             <span style={{marginTop:30}}>수량 : {count}개</span>
             <button className="d_btn" onClick={()=>setCount(count+1)}>+</button>
-            <button className="d_btn" onClick={()=>setCount(count-1)}>-</button>
+            <button className="d_btn" onClick={()=>
+              {if(count>=1) {
+                setCount(count-1)
+              }
+         }}>-</button>
             <p style={{fontSize:24, fontWeight:'bold', marginTop:40}}>총 금액 : {bests[id].saleprice*count}원({count}개)</p>
             <button className="btn" onClick={()=>{
             dispatch(addItem({id:bests[id].id, title:bests[id].title, price:bests[id].saleprice, count:1}))
@@ -86,7 +90,7 @@ export default function Details(props) {
             </div>
 
           <div className="detail_box">
-            <img src={bests[id].detailimg.detailimg01} alt="detail img  " />
+            <img src={bests[id].detailimg.detailimg01} alt="detail img" />
             <img src={bests[id].detailimg.detailimg02} alt="detail img" />
             <img src={bests[id].detailimg.detailimg03} alt="detail img" />
             <img src={bests[id].detailimg.detailimg04} alt="detail img" />

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addItem } from "./store";
-import {Link} from 'react-router-dom';
 
 export default function DetailsNew(props) {
   const {newData}=props
@@ -38,7 +37,11 @@ export default function DetailsNew(props) {
       }</p>
       <span>수량 : {count}개</span>
       <button className="d_btn" onClick={()=>setCount(count+1)}>+</button>
-      <button className="d_btn" onClick={()=>setCount(count-1)}>-</button>
+      <button className="d_btn" onClick={()=>
+              {if(count>=1) {
+                setCount(count-1)
+              }
+         }}>-</button>
       <p style={{fontSize:24, fontWeight:'bold'}}>총 금액 : {newData[id].saleprice*count}원({count}개)</p>
       <button className="btn" onClick={()=>{
       dispatch(addItem({id:newData[id].id, title:newData[id].title, price:newData[id].saleprice, count:1})) 

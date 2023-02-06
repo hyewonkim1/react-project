@@ -94,7 +94,9 @@ function App() {
                   <Link to={`/detail/${i}`}>
                   <img src={best.image} alt="img" style={{width:304, height:450}} />
                   <div className='top_box'>
-                    <p></p>
+                    <div className='colorbox'>
+
+                    </div>
                     <p>{best.review}</p>
                   </div>
                   <p className='title'>{best.title}</p>
